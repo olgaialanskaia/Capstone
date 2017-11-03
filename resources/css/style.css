@@ -1,0 +1,148 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  display: block;
+}
+
+body {
+  display: block;
+  margin: 0;
+  line-height: 1.4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+/* Header and menu */
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 24px;
+}
+
+.logo img {
+  height: 32px;
+  width: 32px;
+}
+
+.logo span {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+
+.colmar {
+  color: #0E2424;
+}
+
+.academy {
+  color: lightgrey;
+}
+
+header nav {
+  padding-right: 16px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 32px 8px;
+}
+
+/* Main section */
+
+.main-content {
+  position: relative;
+  top: 4rem;
+}
+
+/* Start here */
+.start-here-section {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 1.5%;
+  background-color: lightgrey;
+  position: relative;
+}
+
+.image-container {
+  width: 60%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.5rem;
+  width: 40%
+}
+
+.header {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+
+
+.start-here-button {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  text-align: center;
+  color: #FFF;
+  margin-top: 1.5rem;
+  background-color: #57908A;
+  width: 60%;
+}
+
+.start-here-button span {
+  font-size: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+}
+
+footer .copyright {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 32px 24px;
+}
+
+footer .legal {
+  display: inline-block;
+  padding-right: 16px;
+}
+
+.legal span {
+  padding: 32px 8px;
+}
