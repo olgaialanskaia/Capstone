@@ -1,3 +1,5 @@
+/* Universal styles */
+
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -10,6 +12,10 @@ body {
   line-height: 1.4rem;
 }
 
+div {
+  display: block;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: bold;
@@ -17,6 +23,44 @@ h1 {
 
 h2 {
   font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+p {
+	line-height: 1.25rem;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid;
+  padding: 2rem 1.5%;
+  position: relative;
+}
+
+.image-container {
+  overflow: hidden;
+  border: 1px solid;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.content .section-title {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid;
+}
+
+.header {
+  margin-bottom: 1rem;
   line-height: 1.4;
 }
 
@@ -71,40 +115,23 @@ nav span {
 .main-content {
   position: relative;
   top: 4rem;
+  margin: auto;
 }
 
 /* Start here */
-.start-here-section {
-  display: flex;
-  justify-content: flex-start;
-  padding: 2rem 1.5%;
+
+#start-here {
   background-color: lightgrey;
-  position: relative;
 }
 
-.image-container {
+#start-here .image-container {
   width: 60%;
-  overflow: hidden;
 }
 
-.image-container img {
-  width: 100%;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#start-here .content {
   margin-left: 1.5rem;
   width: 40%
 }
-
-.header {
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-
-
 
 .start-here-button {
   padding-top: .5rem;
@@ -119,6 +146,54 @@ nav span {
 .start-here-button span {
   font-size: 1.5rem;
 }
+
+/* Information section*/
+
+#information .content {
+  width: 60%;
+}
+
+.info-subsection {
+  display: flex;
+  margin-left: 1.5rem;
+  width: 40%;
+  border: 1px solid;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.info-subsection .image-container {
+  width: 35%;
+  margin-left: auto;
+}
+
+.info-subsection img {
+  height: 100%;
+}
+
+.info-subsection .content {
+  width: 65%;
+  margin-left: auto;
+}
+
+/* Courses */
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  margin: 3em 1em 0 1em;
+  flex-wrap: wrap;
+  border: 1px solid;
+}
+
+.item {
+  width: 30%;
+  border: 1px solid;
+}
+
+
+
+
 
 /* Footer */
 
