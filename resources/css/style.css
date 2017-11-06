@@ -22,11 +22,11 @@ p { font-size: 1rem; line-height: 1.25rem; }
 or
   permutation b. container with items as in #courses
 */
-.main-content { margin: auto; position: relative; }
-  .container { display: flex; padding: 2rem 1.5rem; position: relative; }
+.main-content { margin: 0 auto; }
+  .container { display: flex; padding: 2rem 1.5rem; position: relative; top: 4rem; }
   .container.information, .container.introduction, .container.thesis { padding-right: 0rem; }
     .column { display: flex; flex-direction: column; width: auto; }
-      .column.left { margin-right: 1rem; width: 60%; }
+      .column.left { margin-right: 1rem;  width: 60%; }
         .image-content { overflow: hidden; }
           img { display: block; width: 100%; }
       .column.right { margin-left: 1rem; width: 40%; }
@@ -37,7 +37,15 @@ or
       .item { margin: 0 1rem 1rem 1rem; width: 30%; }
 
 /* 2. Header */
-header { align-items: center; background-color: white; display: flex; height: 4rem; width: 100%; }
+header {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: 4rem;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
 .logo { align-items: center; display: flex; flex-grow: 1; padding-left: 1.5rem; }
 .logo img { height: 2rem; width: 2rem; }
 .logo span { font-size: 1.5rem; text-transform: uppercase; }
@@ -49,7 +57,7 @@ nav span { display: inline-block; padding: 0 .5rem; }
 /* 3. Introduction */
 .introduction { background-color: lightgrey; }
 #introduction .column.right { align-self: center; }
-#introduction .editorial-content { align-items: center; width: 75%; }
+#introduction .editorial-content { padding-left: 0rem; width: 90%; }
 
 .button {
   background-color: #57908A;
@@ -58,6 +66,7 @@ nav span { display: inline-block; padding: 0 .5rem; }
   padding-bottom: .8rem;
   padding-top: .8rem;
   text-align: center;
+  width: 80%;
 }
 
 /* 4. Information */
@@ -73,7 +82,7 @@ nav span { display: inline-block; padding: 0 .5rem; }
 video { width: 100%; }
 
 /* 7. Footer */
-footer { align-items: center; background-color: white; display: flex; height: 4rem; width: 100%; }
-footer .copyright { align-items: center; display: flex; flex-grow: 1; padding: 2rem 1.5rem; }
+footer { align-items: center; background-color: white; display: flex; position: relative; top: 4rem; z-index: 1; width: 100%; }
+footer .copyright { display: flex; flex-grow: 1; padding: 2rem 1.5rem; }
 footer .legal { display: inline-block; padding-right: 1rem; }
 .legal span { padding: 2rem 0.5rem; }
