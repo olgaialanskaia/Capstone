@@ -8,88 +8,296 @@ Table of Contents:
 */
 
 /* 1. Universal styles */
-html { display: block; font-family: 'Roboto', sans-serif; font-size: 16px;}
-body { display: block; margin: 0; }
-div  { display: block; }
-h1 { font-size: 2.9rem; font-weight: bold; line-height: 1.1; padding-bottom: 1.5rem; }
-h2 { font-size: 2rem; font-weight: bold; line-height: 1.4; padding-top: 2rem; }
-h3 { font-size: 1.4rem; line-height: 1.6; font-weight: 500; }
-p  { font-size: 0.889rem; line-height: 1.25rem; padding-bottom: .8rem; }
-#courses h2, #thesis h2 { padding-top: 2rem; text-align: center; }
+html {
+      display: block;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 16px;
+}
 
-/* Content position:
-  permutation a. container with a column (left and right) as in #introduction, #information, and #thesis
-or
-  permutation b. container with items as in #courses
-*/
-.main-content { margin: 0 auto; }
-  .container { display: flex; padding: 2rem 1.5rem; position: relative; top: 4rem; }
-  .container.courses, .container.thesis { top: 0rem; }
-    .column { display: flex; flex-direction: column; width: auto; }
-      .column.left { margin-right: 1rem;  width: 60%; }
-        .image-content { overflow: hidden; }
-          img { display: block; width: 100%; }
-      .column.right { margin-left: 1rem; width: 40%; }
-        .column.right .item { display: flex; flex-direction: row; margin: 0 0 2rem 1rem; height: auto; width: auto; }
-        .column.right .image-content { width: 35%; }
-        .column.right .editorial-content { align-self: center; padding: 0 0 0 1rem; width: 65%; }
-    #courses .items { display: flex; flex-wrap: wrap; justify-content: space-around; margin: 0 3.5rem 0rem 3.5rem; }
-      #courses .item { box-sizing: border-box; flex: auto; margin: 0 1rem 2rem 1rem; width: 30%; }
-      #courses .item .editorial-content { padding: 1rem 1rem 1.5rem 1rem; height: 40%; text-overflow: ellipsis; }
+body {
+
+      display: block;
+      margin: 0;
+}
+
+div {
+      display: block;
+}
+
+/* Fonts */
+
+h1 {
+      font-size: 2.9rem;
+      font-weight: 600;
+      line-height: 3rem;
+}
+
+h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 2.5rem;
+}
+
+h3 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 2rem;
+}
+
+p {
+      font-size: 0.889rem;
+      line-height: 1.5rem;
+}
+
+#courses h2,
+#thesis h2 {
+      padding-top: 2rem;
+      text-align: center;
+}
+
+/* Containers, columns, and items */
+
+.main-content {
+      background-color: #EFECF0;
+}
+
+.container {
+      display: flex;
+      position: relative;
+      top: inherit;
+}
+
+#courses,
+#thesis {
+      top: 0rem;
+}
+
+.column-left {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1.5rem;
+      width: 60%;
+}
+
+.image-content {
+      overflow: hidden;
+}
+
+img {
+      display: block; width: 100%;
+}
+
+.column-right {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0 0 0;
+      width: 40%;
+}
+
+.column-right .item {
+      border-top: 1px solid lightgrey;
+      display: flex;
+      height: auto;
+      padding: 1rem 0 1rem 1rem;
+      width: auto; }
+
+.column-right .item:hover {
+      background-color: #D3D3D3;
+}
+
+.column-right .image-content {
+      width: 35%;
+}
+
+.column-right .editorial-content {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      line-height: 2rem;
+      padding-left: 1rem;
+      width: 65%;
+}
+
+.column-central {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0 3.5rem;
+      padding: 2rem 1.5rem;
+}
+
+.column-central .item {
+      box-sizing: border-box;
+      flex: auto;
+      margin: 0 1rem 2rem 1rem;
+      width: 30%;
+}
+
+.column-central .item .editorial-content {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      height: 40%;
+      line-height: 2rem;
+      padding: 1rem 1rem 1.5rem 1rem;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+}
+
+/* Transition and Colors */
+
+#introduction,
+#courses {
+      background-color: #DED8E8;
+}
+
+.button:hover, .link:hover {
+      color: #a9a9a9;
+}
 
 /* 2. Header */
+
 header {
-  align-items: center;
-  background-color: white;
-  display: flex;
-  height: 4rem;
-  position: fixed;
-  z-index: 2;
-  width: 100%;
+      align-items: center;
+      background-color: #FBFBFF;
+      display: flex;
+      height: 4rem;
+      z-index: 2;
+      width: 100%;
 }
-.logo { align-items: center; display: flex; flex-grow: 1; padding-left: 1.5rem; }
-.logo img { height: 2rem; width: 2rem; }
-.logo span { font-size: 1.5rem; text-transform: uppercase; }
-.colmar { color: #0E2424; }
-.academy { color: lightgrey; }
-nav { padding-right: 1rem; }
-nav span { display: inline-block; padding: 0 .5rem; }
+
+.logo {
+      align-items: center;
+      display: flex;
+      flex-grow: 1;
+      margin-left: 1.5rem;
+}
+
+.logo img {
+      height: 2rem;
+      width: 2rem;
+}
+
+.logo span {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+}
+
+.colmar {
+      color: #0E2424;
+}
+
+.academy {
+      color: #D3D3D3;
+}
+nav {
+      padding: 0 1rem 0 0;
+}
+
+nav span {
+      display: inline-block;
+      padding: 0 .5rem;
+}
 
 /* 3. Introduction */
-.introduction, .courses, #courses h2 { background-color: lightgrey; }
-#introduction .column.right { align-self: center; }
-#introduction .editorial-content { padding-left: 0rem; width: 90%; }
+
+#introduction .column-right {
+      align-self: center;
+}
+
+#introduction .editorial-content {
+      padding-left: 1rem;
+      width: 90%;
+}
+
+#introduction h3 {
+      padding-top: 1.5rem;
+}
 
 .button {
-  background-color: #57908A;
-  color: #FFF;
-  margin-top: 1.5rem;
-  padding-bottom: .8rem;
-  padding-top: .8rem;
-  text-align: center;
-  width: 80%;
+      background-color: #4E6778;
+      border-radius: 0.25rem;
+      color: #FFF;
+      margin-top: 1.5rem;
+      padding: .8rem 0 ;
+      text-align: center;
+      width: 80%;
 }
 
 /* 4. Information */
-#information h2 { padding-bottom: 1.5rem; }
-.signature { padding-top: 2rem; margin-bottom: 4rem;}
-.signature span { font-size: 0.889rem; font-weight: 400;}
-.link { font-size: 0.889rem; font-weight: 400; }
+
+#information .image-content {
+      padding-bottom: 2rem;
+}
+
+#information .column-left p {
+      padding-top: 1.5rem;
+}
+
+#information .column-right {
+      border-left: 1px solid lightgrey;
+}
+
+.signature {
+      padding: 2rem 0;
+}
+
+.signature span,
+.link {
+      font-size: 0.889rem;
+      font-weight: 400;
+}
 
 /* 5. Courses */
-.courses .editorial-content { background-color: white; }
-.courses h3 { padding-bottom: 0.5rem; }
-.courses span { text-transform: uppercase; }
-.courses p { padding: 1rem 0rem 1rem 0rem; }
+#courses span {
+      text-transform: uppercase;
+}
 
 /* 6. Thesis */
-#thesis .column.right { margin-right: 0.30rem; }
-#thesis .item { margin: 1rem 0 2rem 1rem; }
-.thesis h3 { padding: 1.5rem 0 0.5rem 0; }
-video { width: 100%; }
+
+#thesis .column-left p {
+      padding-top: 0.5rem;
+}
+
+#thesis .image-content {
+      padding-bottom: 1.5rem;
+}
+#thesis .column-right {
+      margin-right: 0.30rem;
+}
+
+#thesis .item {
+      border-top: none;
+      padding: 1rem 0 1rem 1rem;
+}
+
+video {
+      height: auto;
+      width: 100%;
+}
 
 /* 7. Footer */
-footer { border-top: 1px solid lightgrey; align-items: center; background-color: white; display: flex; position: relative; z-index: 1; width: 100%; }
-footer .copyright { display: flex; flex-grow: 1; padding: 2rem 1.5rem; }
-footer .legal { display: inline-block; padding-right: 1rem; }
-.legal span { padding: 2rem 0.5rem; }
+footer {
+      align-items: center;
+      background-color: #FBFBFF;
+      border-top: 1px solid lightgrey;
+      display: flex;
+      position: relative;
+      width: 100%;
+      z-index: 1;
+}
+
+footer .copyright {
+      display: flex;
+      flex-grow: 1;
+      padding: 2rem 1.5rem;
+}
+
+footer .legal {
+      display: inline-block;
+      padding-right: 1rem;
+}
+
+.legal span {
+      padding: 2rem 0.5rem;
+}
