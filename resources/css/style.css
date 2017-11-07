@@ -8,296 +8,353 @@ Table of Contents:
 */
 
 /* 1. Universal styles */
+
 html {
-      display: block;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 16px;
+  display: block;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
 }
 
 body {
-
-      display: block;
-      margin: 0;
+  display: block;
+  margin: 0;
 }
 
 div {
-      display: block;
+  display: block;
 }
 
 /* Fonts */
 
 h1 {
-      font-size: 2.9rem;
-      font-weight: 600;
-      line-height: 3rem;
+  font-size: 2.9rem;
+  font-weight: 600;
+  line-height: 3rem;
 }
 
 h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 2.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
 }
 
 h3 {
-      font-size: 1.4rem;
-      font-weight: 500;
-      line-height: 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2rem;
 }
 
 p {
-      font-size: 0.889rem;
-      line-height: 1.5rem;
+  font-size: 0.889rem;
+  line-height: 1.5rem;
 }
 
 #courses h2,
 #thesis h2 {
-      padding-top: 2rem;
-      text-align: center;
+  padding-top: 2rem;
+  text-align: center;
 }
 
 /* Containers, columns, and items */
 
 .main-content {
-      background-color: #EFECF0;
+  background-color: #EFECF0;
 }
 
 .container {
-      display: flex;
-      position: relative;
-      top: inherit;
+  display: flex;
+  position: relative;
+  top: inherit;
 }
 
 #courses,
 #thesis {
-      top: 0rem;
+  top: 0rem;
 }
 
 .column-left {
-      display: flex;
-      flex-direction: column;
-      padding: 2rem 1.5rem;
-      width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  width: 60%;
 }
 
 .image-content {
-      overflow: hidden;
+  overflow: hidden;
 }
 
 img {
-      display: block; width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .column-right {
-      display: flex;
-      flex-direction: column;
-      padding: 2rem 0 0 0;
-      width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 0 0;
+  width: 40%;
 }
 
 .column-right .item {
-      border-top: 1px solid lightgrey;
-      display: flex;
-      height: auto;
-      padding: 1rem 0 1rem 1rem;
-      width: auto; }
+  border-top: 1px solid lightgrey;
+  display: flex;
+  height: auto;
+  padding: 1rem 0 1rem 1rem;
+  width: auto; }
 
 .column-right .item:hover {
-      background-color: #D3D3D3;
+  background-color: #D3D3D3;
 }
 
 .column-right .image-content {
-      width: 35%;
+  width: 35%;
 }
 
 .column-right .editorial-content {
-      align-self: center;
-      display: flex;
-      flex-direction: column;
-      line-height: 2rem;
-      padding-left: 1rem;
-      width: 65%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  padding-left: 1rem;
+  width: 65%;
 }
 
 .column-central {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin: 0 3.5rem;
-      padding: 2rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 3.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .column-central .item {
-      box-sizing: border-box;
-      flex: auto;
-      margin: 0 1rem 2rem 1rem;
-      width: 30%;
+  box-sizing: border-box;
+  flex: auto;
+  margin: 0 1rem 2rem 1rem;
+  width: 30%;
 }
 
 .column-central .item .editorial-content {
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      height: 40%;
-      line-height: 2rem;
-      padding: 1rem 1rem 1.5rem 1rem;
-      text-overflow: ellipsis;
-      word-wrap: break-word;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  line-height: 2rem;
+  padding: 1rem 1rem 1.5rem 1rem;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 
 /* Transition and Colors */
 
 #introduction,
 #courses {
-      background-color: #DED8E8;
+  background-color: #DED8E8;
 }
 
 .button:hover, .link:hover {
-      color: #a9a9a9;
+  color: #a9a9a9;
 }
 
 /* 2. Header */
 
 header {
-      align-items: center;
-      background-color: #FBFBFF;
-      display: flex;
-      height: 4rem;
-      z-index: 2;
-      width: 100%;
+  align-items: center;
+  background-color: #FBFBFF;
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2;
 }
 
 .logo {
-      align-items: center;
-      display: flex;
-      flex-grow: 1;
-      margin-left: 1.5rem;
+  align-items: center;
+  display: flex;
+  margin-left: 1.5rem;
 }
 
 .logo img {
-      height: 2rem;
-      width: 2rem;
+  height: 2rem;
 }
 
 .logo span {
-      font-size: 1.5rem;
-      text-transform: uppercase;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .colmar {
-      color: #0E2424;
+  color: #0E2424;
 }
 
 .academy {
-      color: #D3D3D3;
-}
-nav {
-      padding: 0 1rem 0 0;
+  color: #D3D3D3;
 }
 
-nav span {
-      display: inline-block;
-      padding: 0 .5rem;
+.desktop ul li {
+  display: inline-block;
+	font-size: 1.1rem;
+	padding: .5rem;
+	margin-left: 1rem;
+	width: 8rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.mobile ul li {
+  display: none;
 }
 
 /* 3. Introduction */
 
 #introduction .column-right {
-      align-self: center;
+  align-self: center;
 }
 
 #introduction .editorial-content {
-      padding-left: 1rem;
-      width: 90%;
+  padding-left: 1rem;
+  width: 90%;
 }
 
 #introduction h3 {
-      padding-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .button {
-      background-color: #4E6778;
-      border-radius: 0.25rem;
-      color: #FFF;
-      margin-top: 1.5rem;
-      padding: .8rem 0 ;
-      text-align: center;
-      width: 80%;
+  background-color: #4E6778;
+  border-radius: 0.25rem;
+  color: #FFF;
+  margin-top: 1.5rem;
+  padding: .8rem 0 ;
+  text-align: center;
+  width: 80%;
 }
 
 /* 4. Information */
 
 #information .image-content {
-      padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 #information .column-left p {
-      padding-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 #information .column-right {
-      border-left: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
 }
 
 .signature {
-      padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 .signature span,
 .link {
-      font-size: 0.889rem;
-      font-weight: 400;
+  font-size: 0.889rem;
+  font-weight: 400;
 }
 
 /* 5. Courses */
+
 #courses span {
-      text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 /* 6. Thesis */
 
 #thesis .column-left p {
-      padding-top: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 #thesis .image-content {
       padding-bottom: 1.5rem;
 }
 #thesis .column-right {
-      margin-right: 0.30rem;
+  margin-right: 0.30rem;
 }
 
 #thesis .item {
-      border-top: none;
-      padding: 1rem 0 1rem 1rem;
+  border-top: none;
+  padding: 1rem 0 1rem 1rem;
 }
 
 video {
-      height: auto;
-      width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 /* 7. Footer */
+
 footer {
-      align-items: center;
-      background-color: #FBFBFF;
-      border-top: 1px solid lightgrey;
-      display: flex;
-      position: relative;
-      width: 100%;
-      z-index: 1;
+  align-items: center;
+  background-color: #FBFBFF;
+  border-top: 1px solid lightgrey;
+  display: flex;
+  position: relative;
+  width: 100%;
+  z-index: 1;
 }
 
 footer .copyright {
-      display: flex;
-      flex-grow: 1;
-      padding: 2rem 1.5rem;
+  display: flex;
+  flex-grow: 1;
+  padding: 2rem 1.5rem;
 }
 
 footer .legal {
-      display: inline-block;
-      padding-right: 1rem;
+  display: inline-block;
+  padding-right: 1rem;
 }
 
 .legal span {
-      padding: 2rem 0.5rem;
+  padding: 2rem 0.5rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+html,
+body {
+	width: auto;
+	margin: 0;
+	background: #FAFAFA;
+	color: #0E2424;
+	}
+
+/* Header */
+
+header {
+  color: #000000;
+  display: flex;
+  justify-content: space-around;
+  position: static;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.desktop {
+  display: none;
+}
+
+.logo img {
+  margin: 0 1.5rem;
+}
+
+.colmar,
+.academy {
+  display: none;
+}
+
+.mobile ul li {
+  display: inline-block;
+  width: auto;
+}
+
+.mobile img {
+  margin: 0 1.5rem;
+  width: auto;
+}
 }
