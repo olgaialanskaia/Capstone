@@ -4,7 +4,7 @@ Table of Contents:
 1. Universal styles 2. Header
 3. Introduction 4. Information
 5. Courses 6. Thesis
-7. Footer
+7. Footer 8. Media Queries
 */
 
 /* 1. Universal styles */
@@ -64,7 +64,6 @@ p {
 .container {
   display: flex;
   position: relative;
-  top: inherit;
 }
 
 #courses,
@@ -108,6 +107,10 @@ img {
 
 .column-right .image-content {
   width: 35%;
+}
+
+.mobile-image-content {
+  display: none;
 }
 
 .column-right .editorial-content {
@@ -154,6 +157,10 @@ img {
 
 .button:hover, .link:hover {
   color: #a9a9a9;
+}
+
+.link {
+    color: #003F6B;
 }
 
 /* 2. Header */
@@ -310,14 +317,16 @@ footer .legal {
   padding: 2rem 0.5rem;
 }
 
+/* 8. Media Queries */
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
 html,
 body {
-	width: auto;
-	margin: 0;
-	background: #FAFAFA;
+  background: #FAFAFA;
 	color: #0E2424;
+	margin: 0;
+  width: auto;
 	}
 
 /* Header */
@@ -357,4 +366,124 @@ header {
   margin: 0 1.5rem;
   width: auto;
 }
+
+/* Introduction */
+
+#introduction .container {
+  flex-direction: column;
+}
+
+#introduction .column-left {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#introduction .column-right {
+  padding: 0;
+  width: 100%;
+}
+
+#introduction h1 {
+  margin: 2rem 1rem 0.5rem 0rem;
+	font-size: 1.5rem;
+  line-height: normal;
+}
+
+#introduction h3 {
+  margin: 0rem 1rem 1rem 0rem;
+	font-size: 1.25rem;
+}
+
+#introduction .button {
+  margin: 1rem 1rem 2rem 0rem;
+  width: auto;
+}
+
+/* Information */
+
+#information .container {
+  flex-direction: column;
+}
+
+#information .column-left {
+  display: none;
+}
+
+#information .column-right {
+  width: auto;
+}
+
+#information .item {
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+#information .editorial-content {
+  align-self: flex-start;
+  width: auto;
+}
+
+#information .image-content {
+  display: none;
+}
+
+.mobile-image-content {
+  display: block;
+}
+
+#information h3 {
+  padding-top: 1rem;
+}
+
+/* Courses */
+
+.column-central {
+  flex-direction: column;
+  margin: 1rem 0rem 2rem 0rem;
+  padding: 0 0;
+  width: 100%;
+}
+
+.column-central .item {
+  box-sizing: border-box;
+  flex: auto;
+  margin: 0 0;
+  width: 100%;
+  padding: 0.25rem 1rem;
+
+}
+
+.column-central .item .editorial-content {
+  background-color: ##D3D3D3;
+  display: flex;
+}
+
+#courses img,
+#courses span,
+#courses p {
+  display: none;
+}
+
+/* Thesis */
+
+#thesis .container {
+  flex-direction: column;
+}
+
+#thesis .column-left {
+  width: auto;
+}
+
+#thesis .editorial-content,
+#thesis .column-right {
+  display: none;
+}
+
+/* Footer */
+
+footer .legal {
+  display: none;
+}
+
 }
