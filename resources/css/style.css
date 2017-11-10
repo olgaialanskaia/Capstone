@@ -90,7 +90,7 @@ img {
 .column-right {
   display: flex;
   flex-direction: column;
-  padding: 2rem 0 0 0;
+  padding-top: 2rem;
   width: 40%;
 }
 
@@ -133,7 +133,7 @@ img {
 .column-central .item {
   box-sizing: border-box;
   flex: auto;
-  margin: 0 1rem 2rem 1rem;
+  padding: 0 1rem 2rem 1rem;
   width: 30%;
 }
 
@@ -141,18 +141,15 @@ img {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  height: 40%;
   line-height: 2rem;
   padding: 1rem 1rem 1.5rem 1rem;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
 }
 
-/* Transition and Colors */
+/* Transitions and Colors */
 
 #introduction,
 #courses {
-  background-color: #DED8E8;
+  background-color: #FFF8F6;
 }
 
 .button:hover, .link:hover {
@@ -160,7 +157,7 @@ img {
 }
 
 .link {
-    color: #003F6B;
+    color: #2E53E0;
 }
 
 /* 2. Header */
@@ -170,19 +167,20 @@ header {
   background-color: #FBFBFF;
   display: flex;
   height: 4rem;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
-  z-index: 2;
 }
 
 .logo {
   align-items: center;
   display: flex;
-  margin-left: 1.5rem;
+  flex-grow: 1;
+  padding-left: 1.5rem;
 }
 
 .logo img {
   height: 2rem;
+  width: auto;
 }
 
 .logo span {
@@ -198,13 +196,20 @@ header {
   color: #D3D3D3;
 }
 
+header nav {
+  padding-right: 1rem;
+}
+
+nav {
+  display: block;
+}
+
 .desktop ul li {
   display: inline-block;
 	font-size: 1.1rem;
-	padding: .5rem;
 	margin-left: 1rem;
-	width: 8rem;
-	text-align: center;
+  padding: .5rem;
+  text-align: center;
 	text-transform: capitalize;
 }
 
@@ -273,8 +278,8 @@ header {
   padding-top: 0.5rem;
 }
 
-#thesis .image-content {
-      padding-bottom: 1.5rem;
+#thesis .editorial-content {
+      padding-top: 1.5rem;
 }
 #thesis .column-right {
   margin-right: 0.30rem;
@@ -339,9 +344,9 @@ header {
 }
 
 .logo {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 .desktop {
@@ -385,14 +390,14 @@ header {
 }
 
 #introduction h1 {
-  margin: 2rem 1rem 0.5rem 0rem;
-	font-size: 1.5rem;
+	font-size: 2rem;
   line-height: normal;
+  margin: 2rem 1rem 0.5rem 0rem;
 }
 
 #introduction h3 {
+  font-size: 1.25rem;
   margin: 0rem 1rem 1rem 0rem;
-	font-size: 1.25rem;
 }
 
 #introduction .button {
@@ -411,6 +416,7 @@ header {
 }
 
 #information .column-right {
+  padding: 1rem 0;
   width: auto;
 }
 
@@ -449,13 +455,12 @@ header {
   box-sizing: border-box;
   flex: auto;
   margin: 0 0;
-  width: 100%;
   padding: 0.25rem 1rem;
-
+  width: 100%;
 }
 
 .column-central .item .editorial-content {
-  background-color: ##D3D3D3;
+  background-color: #D3D3D3;
   display: flex;
 }
 
@@ -465,13 +470,19 @@ header {
   display: none;
 }
 
+#courses h3:hover {
+  color: #2E53E0;
+}
+
 /* Thesis */
 
 #thesis .container {
   flex-direction: column;
+  padding: 1rem 0 1.5rem 0;
 }
 
 #thesis .column-left {
+  padding: 0;
   width: auto;
 }
 
@@ -481,6 +492,10 @@ header {
 }
 
 /* Footer */
+
+footer .copyright {
+  padding: 1rem 1rem;
+}
 
 footer .legal {
   display: none;
