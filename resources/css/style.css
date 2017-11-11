@@ -46,6 +46,7 @@ h3 {
 
 p {
   font-size: 0.889rem;
+  font-weight: 450;
   line-height: 1.5rem;
 }
 
@@ -263,7 +264,7 @@ nav {
 .signature span,
 .link {
   font-size: 0.889rem;
-  font-weight: 400;
+  font-weight: 450;
 }
 
 /* 5. Courses */
